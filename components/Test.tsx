@@ -3,7 +3,7 @@ import { prisma } from "@/lib/prisma";
 export default async function Test() {
   const employee = await prisma.employee.findFirst({
     where: {
-      email: 'johndoe@employee.com',
+      role: 'employee',
     },
   });
 
